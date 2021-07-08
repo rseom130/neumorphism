@@ -3,6 +3,7 @@ html, body {
     font-family: "Noto Sans KR", sans-serif !important;
     background: #b1bfcf;
     color: #4a4a4a !important;
+    overflow: hidden;
 }
 
 #background {
