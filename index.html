@@ -41,28 +41,34 @@
             </div>
         </div>
         <div class="hero-foot input_box pb-4">
+            <div class="search_box">
+                <input class="input" type="text" name="search" placeholder="Search..">
+            </div>
+            <div class="menu_box">
+
+            </div>
             <div class="columns is-mobile">
-                <div class="column">
-                    <a href="#" class="button btn icon">
-                        <img src="./images/icon_back.svg">
-                    </a>
+                <div class="column jk-icon-column">
+                    <button type="button" class="button btn icon search_btn" onclick="f_search_box()">
+                        <img src="./images/icon_search.svg">
+                    </button>
                 </div>
-                <div class="column">
+                <div class="column jk-icon-column">
                     <a href="#" class="button btn icon">
                         <img src="./images/icon_music.svg">
                     </a>
                 </div>
-                <div class="column">
+                <div class="column jk-icon-column">
                     <a href="#" class="button btn icon">
                         <img src="./images/icon_video.svg">
                     </a>
                 </div>
-                <div class="column">
+                <div class="column jk-icon-column">
                     <a href="#" class="button btn icon">
                         <img src="./images/icon_picture.svg">
                     </a>
                 </div>
-                <div class="column">
+                <div class="column jk-icon-column">
                     <a href="#" class="button btn icon">
                         <img src="./images/icon_menu.svg">
                     </a>
@@ -70,5 +76,17 @@
             </div>
         </div>
     </section>
+    <script>
+        function f_search_box() {
+            var t = $('.search_btn');
+            if(t.hasClass('on')) {
+                t.removeClass('on');
+                $('.search_box').hide();
+            } else {
+                t.addClass('on');
+                $('.search_box').show();
+            }
+        }
+    </script>
 </body>
 </html>

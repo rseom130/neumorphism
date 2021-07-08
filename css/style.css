@@ -16,7 +16,6 @@ html, body {
 .message_box {
     max-width: 480px;
     border-radius: 40px;
-    background: #ffffff;
     position: fixed;
     z-index: 2;
     width: 100vw;
@@ -27,7 +26,7 @@ html, body {
     top: 50% !important;
     left: 50% !important;
     transform: translate(-50%, -50%);
-    background: linear-gradient( to right, #e9f1fa, #e9f1f9 );
+    background: #e9f1f9;
 }
 
 .jk-bold {
@@ -115,14 +114,38 @@ html, body {
 
 .icon {
     padding: 1rem;
-    width: 3rem;
-    height: 3rem;
 }
 
 .btn:hover {
     box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #BABECC !important;
 }
 
-.btn:active {
+.btn.on {
     box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF !important;
+}
+
+.input {
+    box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #FFF;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    appearance: none;
+    -webkit-appearance: none;
+    background: #e9f1f9;
+    margin:0;
+}
+
+.hero-foot {
+    position: relative;
+}
+.search_box {
+    position: absolute;
+    top: -3rem;
+    z-index: 9999;
+    width: 100%;
+    display: none;
+}
+
+.jk-icon-column {
+    text-align: center;
 }
