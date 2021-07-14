@@ -49,6 +49,70 @@ html, body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), -2px -2px 4px white;
     color: #4a4a4a;
 }
+
+.jk-title a {
+    color: #7b7b7b;
+}
+.jk-title a:hover,
+.jk-title a:focus,
+.jk-title a:active,
+.jk-title a:visited {
+    color: #757575;
+}
+
+.jk-list {
+    display: flex;
+    cursor: pointer;
+}
+
+.jk-list .jk-list-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.jk-list .jk-list-img {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../images/icon_music.svg");
+}
+
+.jk-list .jk-list-info .jk-list-title {
+    font-weight: bold;
+    flex: 1;
+    color: #4a4a4a;
+}
+
+.jk-list .jk-list-info .jk-list-artist {
+    flex: 1;
+    color: #757575;
+}
+
+.jk-list-border-bottom .jk-list {
+    border-bottom: 1px solid #b1bfcf;
+}
+
+.jk-list-border-bottom .columns:last-child .jk-list {
+    border-bottom: none;
+}
+
+.jk-gallery .jk-gallery-img {
+    width: 100%;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../images/icon_picture.svg");
+}
+
+.jk-gallery .jk-gallery-info .jk-gallery-title {
+    font-weight: bold;
+    flex: 1;
+    color: #4a4a4a;
+}
 /*
 .jk-color-main {
     color: #d74c87;
@@ -65,8 +129,15 @@ html, body {
 }
 */
 
+.jk-w-100 {
+    width: 100%;
+}
+
+.jk-scroll:not(.main) {
+    display: unset !important;
+}
+
 .jk-scroll {
-    /*display: unset !important;*/
     height: 50vh;
     overflow: auto;
     margin: 1rem 0;

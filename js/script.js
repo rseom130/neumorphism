@@ -8,3 +8,17 @@ function f_search_box() {
         $('.search_box').show();
     }
 }
+
+
+$(document).ready(function() {
+    gallery_img_height();
+});
+$( window ).resize(function() {
+    gallery_img_height();
+});
+
+
+function gallery_img_height() {
+    var w = $('.jk-gallery-img').width();
+    $('.jk-gallery-img').height(w);
+}
