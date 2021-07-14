@@ -5,6 +5,8 @@ html, body {
     color: #4a4a4a !important;
     overflow: hidden;
     touch-action: pan-y;
+    -ms-content-zooming: none;
+    -ms-touch-action: pan-x pan-y;
 }
 
 #background {
