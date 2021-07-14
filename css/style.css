@@ -4,9 +4,9 @@ html, body {
     background: #b1bfcf;
     color: #4a4a4a !important;
     overflow: hidden;
-    touch-action: pan-y;
+    touch-action: none;
     -ms-content-zooming: none;
-    -ms-touch-action: pan-x pan-y;
+    -ms-touch-action: none;
 }
 
 #background {
