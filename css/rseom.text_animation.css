@@ -1,0 +1,23 @@
+.textBox {
+    align-self:center;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.textBox.border_bottom {
+    border-bottom: solid 2px rgba(255, 255, 255, 0.7);
+}
+.textBox .typingCursor {
+    background-color: rgba(255, 255, 255, 0.7);
+    animation: cursorAnimation 0.3s 0.2s infinite linear alternate;
+    width: 3px;
+    display: inline-block;
+}
+@keyframes cursorAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

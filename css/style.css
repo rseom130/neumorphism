@@ -4,6 +4,7 @@ html, body {
     background: #b1bfcf;
     color: #4a4a4a !important;
     overflow: hidden;
+    touch-action: pan-y;
 }
 
 #background {
@@ -65,11 +66,22 @@ html, body {
 */
 
 .jk-scroll {
-    display: unset !important;
+    /*display: unset !important;*/
     height: 50vh;
     overflow: auto;
     margin: 1rem 0;
     padding: 0;
+}
+
+#typingBox {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #BABECC;
+    text-shadow: 1px 1px 1px #FFF;
+}
+
+.textBox .typingCursor {
+    background-color: #BABECC !important;
 }
 
 
