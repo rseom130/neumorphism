@@ -38,6 +38,13 @@
                 <input class="input" type="text" name="search" placeholder="Search..">
             </div>
             <div class="menu_box">
+                <ul>
+                    <li><img src="./images/icon_javascript.svg">Javascript</li>
+                    <li><img src="./images/icon_github.svg">Github</li>
+                    <li><img src="./images/icon_youtube.svg">Youtube</li>
+                    <li><img src="./images/icon_instagram.svg">Instagram</li>
+                    <li><img src="./images/icon_share.svg">Share</li>
+                </ul>
             </div>
             <div class="columns is-mobile">
                 <div class="column jk-icon-column">
@@ -61,12 +68,13 @@
                     </a>
                 </div>
                 <div class="column jk-icon-column">
-                    <a href="./menu.html" class="button btn icon">
+                    <button type="button" class="button btn icon menu_btn" onclick="f_menu_box()">
                         <img src="./images/icon_menu.svg">
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>
+        <div id="background_black" onclick="f_close_box()"></div>
     </section>
 
     <script>

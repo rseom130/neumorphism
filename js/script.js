@@ -1,12 +1,43 @@
 function f_search_box() {
-    var t = $('.search_btn');
-    if(t.hasClass('on')) {
-        t.removeClass('on');
+    var mbtn = $('.menu_btn');
+    var sbtn = $('.search_btn');
+    if(sbtn.hasClass('on')) {
+        sbtn.removeClass('on');
         $('.search_box').hide();
+        $('#background_black').hide();
     } else {
-        t.addClass('on');
+        $('#background_black').show();
+        sbtn.addClass('on');
         $('.search_box').show();
+        mbtn.removeClass('on');
+        $('.menu_box').hide();
     }
+}
+
+function f_menu_box() {
+    var mbtn = $('.menu_btn');
+    var sbtn = $('.search_btn');
+    if(mbtn.hasClass('on')) {
+        mbtn.removeClass('on');
+        $('.menu_box').hide();
+        $('#background_black').hide();
+    } else {
+        $('#background_black').show();
+        mbtn.addClass('on');
+        $('.menu_box').show();
+        sbtn.removeClass('on');
+        $('.search_box').hide();
+    }
+}
+
+function f_close_box() {
+    var mbtn = $('.menu_btn');
+    var sbtn = $('.search_btn');
+    sbtn.removeClass('on');
+    $('.search_box').hide();
+    mbtn.removeClass('on');
+    $('.menu_box').hide();
+    $('#background_black').hide();
 }
 
 

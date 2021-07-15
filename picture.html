@@ -29,37 +29,47 @@
     <div class="hero-body jk-scroll">
         <div class="columns jk-w-100">
             <a class="column is-6 jk-gallery">
-                <div class="jk-gallery-img" style="background-image: url('https://img.youtube.com/vi/ZBTppWslyyI/hqdefault.jpg');"></div>
-                <div class="jk-gallery-info mt-1">
-                    <span class="jk-gallery-title">[P] 큐브 맞추는 법</span>
+                <div class="jk-gallery-in pb-2">
+                    <div class="jk-gallery-img" style="background-image: url('https://img.youtube.com/vi/ZBTppWslyyI/hqdefault.jpg');"></div>
+                    <div class="jk-gallery-info mt-1">
+                        <span class="jk-gallery-title">[P] 큐브 맞추는 법</span>
+                    </div>
                 </div>
             </a>
             <a class="column is-6 jk-gallery">
-                <div class="jk-gallery-img" style="background-image: url('https://img.youtube.com/vi/4hb59FzyUKs/hqdefault.jpg');"></div>
-                <div class="jk-gallery-info mt-1">
-                    <span class="jk-gallery-title">[P] 드론이 신기한 길냥이</span>
-                </div>
-            </a>
-        </div>
-        <div class="columns jk-w-100">
-            <a class="column is-6 jk-gallery">
-                <div class="jk-gallery-img" style="background-image: url('https://img.youtube.com/vi/MMiBfxW4xR4/hqdefault.jpg');"></div>
-                <div class="jk-gallery-info mt-1">
-                    <span class="jk-gallery-title">[P] DJI Mavic Mini</span>
-                </div>
-            </a>
-            <a class="column is-6 jk-gallery">
-                <div class="jk-gallery-img" style="background-image: url('https://img.youtube.com/vi/pd8xU6u1vLo/hqdefault.jpg');"></div>
-                <div class="jk-gallery-info mt-1">
-                    <span class="jk-gallery-title">[P] 당진 여행</span>
+                <div class="jk-gallery-in pb-2">
+                    <div class="jk-gallery-img" style="background-image: url('https://img.youtube.com/vi/4hb59FzyUKs/hqdefault.jpg');"></div>
+                    <div class="jk-gallery-info mt-1">
+                        <span class="jk-gallery-title">[P] 드론이 신기한 길냥이</span>
+                    </div>
                 </div>
             </a>
         </div>
         <div class="columns jk-w-100">
             <a class="column is-6 jk-gallery">
-                <div class="jk-gallery-img" style="background-image: url('https://img.youtube.com/vi/3_Qz5HE-ajE/hqdefault.jpg');"></div>
-                <div class="jk-gallery-info mt-1">
-                    <span class="jk-gallery-title">[P] DJI 매빅 미니 첫 주행</span>
+                <div class="jk-gallery-in pb-2">
+                    <div class="jk-gallery-img" style="background-image: url('https://img.youtube.com/vi/MMiBfxW4xR4/hqdefault.jpg');"></div>
+                    <div class="jk-gallery-info mt-1">
+                        <span class="jk-gallery-title">[P] DJI Mavic Mini</span>
+                    </div>
+                </div>
+            </a>
+            <a class="column is-6 jk-gallery">
+                <div class="jk-gallery-in pb-2">
+                    <div class="jk-gallery-img" style="background-image: url('https://img.youtube.com/vi/pd8xU6u1vLo/hqdefault.jpg');"></div>
+                    <div class="jk-gallery-info mt-1">
+                        <span class="jk-gallery-title">[P] 당진 여행</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="columns jk-w-100">
+            <a class="column is-6 jk-gallery">
+                <div class="jk-gallery-in pb-2">
+                    <div class="jk-gallery-img" style="background-image: url('https://img.youtube.com/vi/3_Qz5HE-ajE/hqdefault.jpg');"></div>
+                    <div class="jk-gallery-info mt-1">
+                        <span class="jk-gallery-title">[P] DJI 매빅 미니 첫 주행</span>
+                    </div>
                 </div>
             </a>
         </div>
@@ -69,6 +79,13 @@
             <input class="input" type="text" name="search" placeholder="Search..">
         </div>
         <div class="menu_box">
+            <ul>
+                <li><img src="./images/icon_javascript.svg">Javascript</li>
+                <li><img src="./images/icon_github.svg">Github</li>
+                <li><img src="./images/icon_youtube.svg">Youtube</li>
+                <li><img src="./images/icon_instagram.svg">Instagram</li>
+                <li><img src="./images/icon_share.svg">Share</li>
+            </ul>
         </div>
         <div class="columns is-mobile">
             <div class="column jk-icon-column">
@@ -87,17 +104,18 @@
                 </a>
             </div>
             <div class="column jk-icon-column">
-                <a href="./picture.html" class="button btn icon on">
+                <a href="./picture.html" class="button btn icon">
                     <img src="./images/icon_picture.svg">
                 </a>
             </div>
             <div class="column jk-icon-column">
-                <a href="./menu.html" class="button btn icon">
+                <button type="button" class="button btn icon menu_btn" onclick="f_menu_box()">
                     <img src="./images/icon_menu.svg">
-                </a>
+                </button>
             </div>
         </div>
     </div>
+    <div id="background_black" onclick="f_close_box()"></div>
 </section>
 </body>
 </html>
